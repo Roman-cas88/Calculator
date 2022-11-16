@@ -1,0 +1,113 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.screen {
+  color: white;
+  grid-area: scr;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 400px;
+  height: 100px;
+  font-size: 60px;
+}
+#ac {
+  grid-area: ac;
+  background-color: orange;
+}
+#changeSign {
+  grid-area: change;
+  background-color: orange;
+}
+#percent {
+  grid-area: percent;
+  background-color: orange;
+}
+#divide {
+  grid-area: divide;
+  background-color: orange;
+}
+#multiply {
+  grid-area: mult;
+  background-color: orange;
+}
+#minus {
+  grid-area: minus;
+  background-color: orange;
+}
+#plus {
+  grid-area: plus;
+  background-color: orange;
+}
+#equals {
+  grid-area: equals;
+  background-color: orange;
+}
+#num1 {
+  grid-area: num1;
+}
+#num2 {
+  grid-area: num2;
+}
+#num3 {
+  grid-area: num3;
+}
+#num4 {
+  grid-area: num4;
+}
+#num5 {
+  grid-area: num5;
+}
+#num6 {
+  grid-area: num6;
+}
+#num7 {
+  grid-area: num7;
+}
+#num8 {
+  grid-area: num8;
+}
+#num9 {
+  grid-area: num9;
+}
+#num0 {
+  grid-area: num0;
+  width: 200px;
+}
+#point {
+  grid-area: point;
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+    "scr scr scr scr"
+    "ac change percent divide"
+    "num7 num8 num9 mult"
+    "num4 num5 num6 minus"
+    "num1 num2 num3 plus"
+    "num0 num0 point equals";
+  width: 400px;
+  height: 600px;
+  background-color: rgb(46, 46, 46);
+  padding: 0;
+  margin: 0;
+  border: 10px solid;
+  border-radius: 10px;
+}
+
+.buttons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 177, 177);
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border: 1px solid;
+  cursor: pointer;
+}
