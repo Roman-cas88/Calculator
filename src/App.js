@@ -4,6 +4,7 @@ import "./styles.css";
 export default function App() {
   let result = 0;
 
+  const ac = () => {console.log('AC')}
   const change = () => {console.log('+/-')};
   const perc = () => {console.log('%')};
   const divd = () => {console.log('/')};
@@ -27,7 +28,7 @@ export default function App() {
     <div className="App">
       <Calculator>
         <Screen result={result} />
-        <Buttons value="AC" idName="ac" />
+        <Buttons value="AC" funcName={ac} idName="ac" />
         <Buttons value="+/-" funcName={change} idName="changeSign" />
         <Buttons value="%" funcName={perc} idName="percent" />
         <Buttons value="/" funcName={divd} idName="divide" />
