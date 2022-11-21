@@ -1,28 +1,78 @@
+import { useState } from "react";
 import { Buttons, Calculator, Screen } from "./components";
 import "./styles.css";
 
 export default function App() {
-  let result = 0;
+  const [result, setResult] = useState(0);
 
-  const ac = () => {console.log('AC')}
-  const change = () => {console.log('+/-')};
-  const perc = () => {console.log('%')};
-  const divd = () => {console.log('/')};
-  const multiply = () => {console.log('x')};
-  const mins = () => {console.log('-')};
-  const pls = () => {console.log('+')};
-  const eqls = () => {console.log('=')};
-  const num1 = () => {console.log('1')};
-  const num2 = () => {console.log('2')};
-  const num3 = () => {console.log('3')};
-  const num4 = () => {console.log('4')};
-  const num5 = () => {console.log('5')};
-  const num6 = () => {console.log('6')};
-  const num7 = () => {console.log('7')};
-  const num8 = () => {console.log('8')};
-  const num9 = () => {console.log('9')};
-  const num0 = () => {console.log('0')};
-  const point = () => {console.log('.')};
+  const ac = () => {
+    console.log("AC");
+  };
+  const change = () => {
+    console.log("+/-");
+  };
+  const perc = () => {
+    console.log("%");
+  };
+  const divd = () => {
+    console.log("/");
+  };
+  const multiply = () => {
+    console.log("x");
+  };
+  const mins = () => {
+    console.log("-");
+  };
+  const pls = () => {
+    console.log("+");
+  };
+  const eqls = () => {
+    console.log("=");
+  };
+  const num1 = () => {
+    setResult(+1);
+    console.log("1");
+  };
+  const num2 = () => {
+    setResult(2);
+    console.log("2");
+  };
+  const num3 = () => {
+    setResult(3);
+    console.log("3");
+  };
+  const num4 = () => {
+    setResult(4);
+    console.log("4");
+  };
+  const num5 = () => {
+    setResult(5);
+    console.log("5");
+  };
+  const num6 = () => {
+    setResult(6);
+    console.log("6");
+  };
+  const num7 = () => {
+    setResult(7);
+    console.log("7");
+  };
+  const num8 = () => {
+    setResult(8);
+    console.log("8");
+  };
+  const num9 = () => {
+    setResult(9);
+    console.log("9");
+  };
+  const num0 = () => {
+    setResult(0);
+    console.log("0");
+  };
+  const point = () => {
+    setResult(".");
+    console.log(".");
+  };
 
   return (
     <div className="App">
