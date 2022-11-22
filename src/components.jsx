@@ -6,10 +6,12 @@ export const Screen = ({ result }) => {
   return <div className="screen">{result}</div>;
 };
 
-export const Buttons = ({ value, idName, funcName }) => {
+export const Buttons = ({ value, idName, funcName, sign, butId }) => {
   return (
-    <div className="buttons" onClick={funcName} id={idName}>
-      {value}
+    <div id={idName}>
+      <button className="buttons" onClick={funcName} value={value} id={butId}>
+        {sign}
+      </button>
     </div>
   );
 };
