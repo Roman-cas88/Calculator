@@ -10,8 +10,9 @@
   align-items: center;
   justify-content: right;
   width: 400px;
-  height: 100px;
+  height: 90px;
   font-size: 60px;
+  border-bottom: 10px solid black;
 }
 #ac {
   grid-area: ac;
@@ -47,37 +48,51 @@
 }
 #num1 {
   grid-area: num1;
+  background-color: rgb(180, 179, 178);
 }
 #num2 {
   grid-area: num2;
+  background-color: rgb(180, 179, 178);
 }
 #num3 {
   grid-area: num3;
+  background-color: rgb(180, 179, 178);
 }
 #num4 {
   grid-area: num4;
+  background-color: rgb(180, 179, 178);
 }
 #num5 {
   grid-area: num5;
+  background-color: rgb(180, 179, 178);
 }
 #num6 {
   grid-area: num6;
+  background-color: rgb(180, 179, 178);
 }
 #num7 {
   grid-area: num7;
+  background-color: rgb(180, 179, 178);
 }
 #num8 {
   grid-area: num8;
+  background-color: rgb(180, 179, 178);
 }
 #num9 {
   grid-area: num9;
+  background-color: rgb(180, 179, 178);
 }
 #num0 {
   grid-area: num0;
+  background-color: rgb(180, 179, 178);
+}
+#but0 {
   width: 200px;
 }
+
 #point {
   grid-area: point;
+  background-color: rgb(180, 179, 178);
 }
 
 .calculator {
@@ -103,7 +118,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(177, 177, 177);
+  background-color: transparent;
   font-size: 30px;
   width: 100px;
   height: 100px;
